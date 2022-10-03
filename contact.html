@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Contact Details</title>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> 
+ <link rel="stylesheet" href="C:\Users\ssala\Desktop\style.css">  
+
+ <script>
+ function testVariable() {
+ var sn = document.getElementById("n1").value;
+ var se = document.getElementById("e1").value;
+ var sbe = document.getElementById("sub1").value;
+ var te = document.getElementById("t1").value;
+ var result ="name:" +sn + ' '+"email:" + se+ ' '+"subject" +sbe+ ' ' +te;
+ alert("name:" +sn +'\n'+
+ "email:" +se + '\n'+
+ "subject:" +sbe + '\n'+
+ "message:" +te + '\n');
+}
+</script>
+<style>
+
+</style>
+</head>
+<body> <!--background="C:\Users\ustjavafsdb110\Desktop\HJX\bootstrapphone.jfif">-->
+     
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="#">My<span>profile</span></a> <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<!--change to ml-auto-->
+					<li class="nav-item active">
+						<a class="nav-link" href="C:\Users\ssala\Desktop\myprofle.html">Home</a>
+					</li>
+					<li class="nav-item dropdown">
+
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">Education</a>
+				
+						<ul class="dropdown-menu">
+				
+						  <li><a class="dropdown-item" href="C:\Users\ssala\Desktop\hschool.html">High School</a></li>
+				
+						  <li><a class="dropdown-item" href="C:\Users\ssala\Desktop\hsschool.html">Higher Secondry School</a></li>
+				
+						  <li><a class="dropdown-item" href="C:\Users\ssala\Desktop\education.html">Graduation</a></li>
+				
+						</ul>
+					<li class="nav-item">
+						<a class="nav-link" href="C:\Users\ssala\Desktop\gallery.html">Gallery</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="C:\Users\ssala\Desktop\contact.html">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+  
+
+<div class="mt-5 conatiner">
+ <div class="text-center">
+ <h3 class="text-primary">Please contact me here.</h3>
+
+ </div>
+ <div class=" d-flex align-items-center justify-content-center">
+<div class="bg-white col-md-4">
+ <div class="p-4 rounded shadow-md">
+ <div>
+<label for="name" class="form-label">Your Name</label>
+ <input type="text" id="n1"name="name" class="form-control" placeholder="Your Name" required>
+ </div>
+ <div class="mt-3">
+
+
+<label for="email" class="form-label">Your Email</label>
+ <input type="email" id="e1" name="email" class="form-control" placeholder="Your Email" required>
+ </div class="mt-3">
+ <div class="mt-3">
+ <label for="subject" class="form-label">Subject</label>
+ <input type="text" id="sub1" name="subject" class="form-control" placeholder="Subject" required>
+ </div>
+ <div class="mt-3 mb-3">
+ <label for="message" class="form-label">Message</label>
+ <textarea name="message" id="t1" cols="20" rows="6" class="form-control"
+ placeholder="message"></textarea>
+ </div>
+
+<br>
+ <button type="button" onclick="testVariable();" class="btn btn-primary">Submit</button>
+</div>
+ </div>
+ </div>
+</div>
+</div>
+
+</body>
+</html>
