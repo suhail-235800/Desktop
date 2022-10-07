@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<head>
+    <title>Employee <Details></Details></title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Employee details</h1>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="empid">Emp ID:</label>
+                        <input type="text" name="empid" id="empid">
+                    </div>
+                    <div>
+                        <label for="empname">Name   : </label>
+                        <input type="text" name="empname" id="empname">
+                    </div>
+                    <div>
+                        <label for="location">Location</label>
+                        <input type="text" name="location" id="location">
+                    </div>
+                    <div>
+                        <label for="salary">Salary :</label>
+                        <input type="number" name="salary" id="salary">
+                    </div>
+
+                    <div class="form_action--button">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+                <tr>
+                <td>
+                    <table class="list" id="empList">
+                        <thead>
+                            <tr>
+                                <th>Emp ID</th>
+                                <th>Employee Name</th>
+                                <th>Location</th>
+                                <th>Salary</th>
+                            </tr>
+                            <tr>
+                                <div class="form_action--button">
+                                    <input type="submit" value="delete" onclick="onDelete()">
+                                </div>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+            
+            </td>
+        </tr>
+        </tr>
+    </table>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<div>
+    <label for="img">Select image:</label>
+    <input type="file" id="img" name="img" accept="image/*">
+</div>-->
